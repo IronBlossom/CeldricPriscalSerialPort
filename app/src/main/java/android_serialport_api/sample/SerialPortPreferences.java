@@ -47,7 +47,6 @@ public class SerialPortPreferences extends PreferenceActivity {
 		devices.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 			public boolean onPreferenceChange(Preference preference, Object newValue) {
 				preference.setSummary((String)newValue);
-				preference.setSummary("");
 				return true;
 			}
 		});
